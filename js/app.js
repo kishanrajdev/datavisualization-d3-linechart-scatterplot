@@ -10,7 +10,7 @@ const svg = d3.select(".d3-chart")
   .append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-d3.csv("./marriage-rate-and-divorce-rate.csv").then(data => {  // fetching data
+d3.csv("../data/marriage-rate-and-divorce-rate.csv").then(data => {  // fetching data
   const xVals = data.map((d) => +d.Year); // xscale range
   const yVals = data.map((d) => +d.Count);  // yscale range
 
